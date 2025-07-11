@@ -4,6 +4,11 @@ in the program or with command line args choose a range of sizes that steps by 3
 
 ## to compile the code
 
-### cc -Wall -Wextra random_art_canvas.c -o random_art_canvas
-### ./random_art_canvas
+cc -Wall -Wextra random_art_canvas.c -o random_art_canvas
+
+./random_art_canvas
+
+## with command args
+
+./random_art_canvas 5
 

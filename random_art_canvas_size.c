@@ -2,14 +2,20 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main( int argc, char *argv[] ) {
+        
         //initiate srand
         srand(time(NULL));
+        int num;
 
         //have the user choose a number
-        int num;
-        printf("Please enter a number to use for the list: \n");
-        scanf("%d", &num);
+        //if the argc is not equal to 2 then we just go on with the regular program
+        if(argc != 2) {
+                printf("Please enter a number to use for the list: \n");
+                scanf("%d", &num);
+        } else {
+                num = atoi(argv[1]);
+        }
 
         //allocate memory for the list of numbers
         int * rand_art_sizes = (int *)malloc(num * sizeof(int));
