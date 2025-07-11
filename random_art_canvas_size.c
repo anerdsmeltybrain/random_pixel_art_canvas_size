@@ -34,7 +34,7 @@ int main( int argc, char *argv[] ) {
                          rand_art_sizes[rand_selection],
                          rand_art_sizes[rand_selection]);
 
-        rand_art_sizes = NULL;
         free(rand_art_sizes);
+        rand_art_sizes = NULL;
         return 0;
 }
